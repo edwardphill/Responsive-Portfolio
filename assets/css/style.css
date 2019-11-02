@@ -35,11 +35,11 @@ a {
 }
 
 input {
-    width: 100%;
+    width: 99%;
 }
 
 textarea {
-    width: 100%;
+    width: 99%;
 }
 
 section {
@@ -87,9 +87,9 @@ li a:hover:not(.active) {
     background-color: #ffffff;
 }
 
-.active {
+.brand {
     background-color: #4aaaa5;
-    font-family: font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
     font-size: 24px;
     margin-right: auto;
 }
@@ -99,6 +99,8 @@ li a:hover:not(.active) {
     background-color: #ffffff;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-content: center;
     border-bottom: 2px solid lightgray;
     position: fixed;
 }
@@ -165,5 +167,20 @@ li a:hover:not(.active) {
 @media screen and (max-width: 640px) {
     #main {
         width: 400px;
+    }
+    .topnav {
+        flex-direction: column;
+    }
+    .brand {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .nav-links {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
     }
 }
