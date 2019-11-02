@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
     line-height: 150%;
     color: #777777;
@@ -19,13 +19,13 @@ h1 {
     font-size: 28px;
     color: #4aaaa5;
     text-align: center;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     background: #ffffff;
 }
 
 h2 {
     font-size: 24px;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
     background: #ffffff;
 }
@@ -65,7 +65,7 @@ section {
     background-color: white;
     margin: auto;
     width: 968px;
-    border: 4px solid lightgray;
+    border: 2px solid lightgray;
 }
 
 #image {
@@ -81,7 +81,7 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #4aaaa5;
-    font-family: 'Source Code Pro', monospace;
+    font-family: font-family: 'Georgia', Times, Times New Roman, serif;
     font-size: 24px;
     margin-right: auto;
 }
@@ -91,7 +91,7 @@ li a:hover:not(.active) {
     background-color: #ffffff;
     width: 100%;
     display: flex;
-    border-bottom: 4px solid lightgray;
+    border-bottom: 2px solid lightgray;
     position: fixed;
 }
 
@@ -142,16 +142,20 @@ li a:hover:not(.active) {
     display: table;
 }
 
-@media (min-width: 0px) {
+@media screen and (max-width: 980px) {
     #main {
-        width: auto;
-        margin: 5%;
+        width: 700px;
     }
 }
 
-@media (max-width: 980px) {
+@media screen and (max-width: 768px) {
     #main {
-        width: auto;
-        margin: 5%;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #main {
+        width: 400px;
     }
 }
